@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(1)/app/src/main/res/layout/activity_intro.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(1)/app/src/main/res/layout/activity_login.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(1)/app/src/main/res/layout/activity_main2.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(1)/app/src/main/res/layout/activity_searchloadname.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(1)/app/src/main/res/layout/activity_signup.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/activity_real_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/fragment_findroad.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/fragment_gaesimul.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/fragment_gasimul.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/fragment_profile.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/layout/pragment_home.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/menu/menu.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/MOA-master(2)/app/src/main/res/menu/nav_menu.xml" value="0.178125" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/moa/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1405" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/moa/app/src/main/res/layout/activity_intro.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/moa/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/moa/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/moa/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/JISUNG/AndroidStudioProjects/moa/app/src/main/res/layout/activity_signup.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa (2)/app/src/main/res/font/fontstyle.xml" value="0.22958529286019666" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa (2)/app/src/main/res/layout/activity_intro.xml" value="0.17769718948322757" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa (2)/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa (2)/app/src/main/res/layout/activity_main.xml" value="0.17769718948322757" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa (2)/app/src/main/res/layout/activity_main2.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa (2)/app/src/main/res/layout/activity_signup.xml" value="0.2" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa/app/src/main/res/layout/activity_intro.xml" value="0.1" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa/app/src/main/res/layout/activity_login.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/junye/AndroidStudioProjects/moa/app/src/main/res/layout/activity_signup.xml" value="0.24947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

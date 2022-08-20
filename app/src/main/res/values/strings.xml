@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">moa</string>
+    <string name="moa">
+
+\u00EB\u0082\u0098\u00EB\u00A7\u008C\u00EC\u009D\u0098 \u00EB\u00AA\u0085\u00EC\u0086\u008C\nMOA
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

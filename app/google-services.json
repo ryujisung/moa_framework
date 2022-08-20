@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "469674064487",
+    "project_id": "moamoa-32a45",
+    "storage_bucket": "moamoa-32a45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469674064487:android:498dc383604ba6006872c2",
+        "android_client_info": {
+          "package_name": "com.example.moa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469674064487-vbqu7b4d76qrjqtljjiu5ak07gpnrgp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5SA38SmOEywnHZl1V3flsC3CUL9cc4O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469674064487-vbqu7b4d76qrjqtljjiu5ak07gpnrgp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/moa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/moa2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="121dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/moa_fun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moa"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/vec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rec"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="320dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="335dp"
+        android:src="@drawable/vector1"
+        app:layout_constraintStart_toStartOf="@+id/rec"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pn"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/rec"
+        app:layout_constraintEnd_toEndOf="@id/rec"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="E-mail"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="310dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rock"
+        app:layout_constraintStart_toStartOf="@id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="417dp"
+        android:layout_marginStart="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/rec2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pw"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/rec2"
+        app:layout_constraintEnd_toEndOf="@id/rec2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="410dp"
+        android:inputType="textPassword"
+        android:hint="비밀번호"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rock"
+        app:layout_constraintStart_toStartOf="@id/rec3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/rec3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pwcheck"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/rec3"
+        app:layout_constraintEnd_toEndOf="@id/rec3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="490dp"
+        android:background="@android:color/transparent"
+        android:inputType="textPassword"
+        android:hint="비밀번호 확인"
+        />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="#4AF40E"
+        android:text="회원가입하기"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/haveaccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="650dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_signup"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="200dp"
+        android:text="로그인하기"
+        android:fontFamily="@font/fontstyle"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
