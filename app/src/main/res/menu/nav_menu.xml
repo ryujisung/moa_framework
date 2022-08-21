@@ -2,8 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="홈"
         android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/search"
+        android:title="검색"
+        android:icon="@drawable/ic_baseline_search_24"/>
     <item
         android:id="@+id/writegaesimul"
         android:title="게시물 쓰기"

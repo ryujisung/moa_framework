@@ -1,5 +1,7 @@
 package com.example.moa
 
+import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.system.Os.remove
@@ -7,14 +9,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.inflate
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.resources.Compatibility.Api21Impl.inflate
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.content.res.ColorStateListInflaterCompat.inflate
 import androidx.core.content.res.ComplexColorCompat.inflate
 import androidx.core.graphics.drawable.DrawableCompat.inflate
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
+import com.company.howl.howlstagram.navigation.AddPhotoActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.util.jar.Manifest
 
 class realMainActivity : AppCompatActivity() {
 
@@ -25,6 +32,9 @@ class realMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_real_main)
 
+
+
+        ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),1)
         // 하단 탭이 눌렸을 때 화면을 전환하기 위해선 이벤트 처리하기 위해 BottomNavigationView 객체 생성
         var bnv_main = findViewById(R.id.bnv_main) as BottomNavigationView
 
@@ -38,6 +48,11 @@ class realMainActivity : AppCompatActivity() {
                         val homeFragment = homeFragment()
                         supportFragmentManager.beginTransaction()
                             .replace(R.id.fl_container, homeFragment).commit()
+                    }
+                    R.id.search -> {
+                        val settingFragment = searchFragment()
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fl_container, settingFragment).commit()
                     }
                     R.id.writegaesimul -> {
                         val boardFragment = gasimulFragment()
@@ -60,5 +75,4 @@ class realMainActivity : AppCompatActivity() {
             selectedItemId = R.id.home
         }
     }
-
 }
