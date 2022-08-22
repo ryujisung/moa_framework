@@ -1,4 +1,4 @@
-package com.company.howl.howlstagram.navigation
+package com.example.moa
 
 import android.app.Activity
 import android.content.Intent
@@ -32,7 +32,6 @@ class AddPhotoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_photo)
 
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
             storage = FirebaseStorage.getInstance()
             // Firebase Database
             // Firebase Auth
@@ -52,9 +51,6 @@ class AddPhotoActivity : AppCompatActivity() {
             findViewById<Button>(R.id.addphoto_btn_upload).setOnClickListener {
                 contentUpload()
             }
-        } else {
-            Toast.makeText(this, "스토리지 읽기 권한이 없습니다.", Toast.LENGTH_LONG).show()
-        }
 
     }
 

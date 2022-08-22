@@ -19,7 +19,6 @@ import androidx.core.graphics.drawable.DrawableCompat.inflate
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
-import com.company.howl.howlstagram.navigation.AddPhotoActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.jar.Manifest
 
@@ -39,7 +38,11 @@ class realMainActivity : AppCompatActivity() {
         var bnv_main = findViewById(R.id.bnv_main) as BottomNavigationView
 
         // OnNavigationItemSelectedListener를 통해 탭 아이템 선택 시 이벤트를 처리
-        // navi_menu.xml 에서 설정했던 각 아이템들의 id를 통해 알맞은 프래그먼트로 변경하게 한다.
+        //
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+
+
+        }
         bnv_main.run {
             setOnNavigationItemSelectedListener {
                 when (it.itemId) {
@@ -55,9 +58,14 @@ class realMainActivity : AppCompatActivity() {
                             .replace(R.id.fl_container, settingFragment).commit()
                     }
                     R.id.writegaesimul -> {
-                        val boardFragment = gasimulFragment()
-                        supportFragmentManager.beginTransaction()
-                            .replace(R.id.fl_container, boardFragment).commit()
+                        if (ContextCompat.checkSelfPermission(this@realMainActivity, android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                            val settingFragment = gasimulFragment()
+                            supportFragmentManager.beginTransaction()
+                                .replace(R.id.fl_container, settingFragment).commit()
+                        }
+                        else {
+                            Toast.makeText(this@realMainActivity, "스토리지 읽기 권한이 없습니다.", Toast.LENGTH_LONG).show()
+                        }
                     }
                     R.id.findroad -> {
                         val settingFragment = findroadFragment()
