@@ -48,20 +48,33 @@ class gasimulFragment : Fragment() {
         val photoPickerIntent = Intent(Intent.ACTION_PICK)
         photoPickerIntent.type = "image/*"
         startActivityForResult(photoPickerIntent, PICK_IMAGE_FROM_ALBUM)
-        val view = inflater.inflate(R.layout.fragment_gasimul, container, false)
-        view.findViewById<ImageView>(R.id.addphoto_image).setOnClickListener {
+        val viewview = inflater.inflate(R.layout.fragment_gasimul, container, false)
+        viewview.findViewById<ImageView>(R.id.addphoto_image).setOnClickListener {
             val photoPickerIntent = Intent(Intent.ACTION_PICK)
             photoPickerIntent.type = "image/*"
             startActivityForResult(photoPickerIntent, PICK_IMAGE_FROM_ALBUM)
         }
 
-        view.findViewById<Button>(R.id.addphoto_btn_upload).setOnClickListener {
-            Log.d("uploadContent", "업로드 클리")
-            contentUpload()
+        viewview.findViewById<Button>(R.id.addphoto_btn_upload).setOnClickListener {
+            Log.d("start","시작")
+            val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
+
+            val imageFileName = "IMAGE_" + timeStamp + "_.png"
+            val storageRef = storage?.reference?.child("images")?.child(imageFileName)
+            storageRef?.putFile(photoUri!!)?.continueWithTask{return@continueWithTask storageRef.downloadUrl }?.addOnSuccessListener{ taskSnapshot ->
+                Log.d("start","성공")
+                Toast.makeText(context,"업로드성공",Toast.LENGTH_SHORT).show();
+
+            }
+                ?.addOnFailureListener {
+                    Log.d("fail","실패")
+                    Toast.makeText(context,"업로드실패",Toast.LENGTH_SHORT).show();
+                }
+            Log.d("end","끝")
         }
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gasimul, container, false)
+        return viewview
     }
     override fun onActivityResult(requestCode: Int, resultCode  : Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -78,19 +91,5 @@ class gasimulFragment : Fragment() {
 
     }
 
-    fun contentUpload(){
-        Log.d("uploadContent", "업로드 함수 시작")
-        val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
-
-        val imageFileName = "IMAGE_" + timeStamp + "_.png"
-        val storageRef = storage?.reference?.child("images")?.child(imageFileName)
-        Toast.makeText(context,"아",Toast.LENGTH_SHORT).show();
-        storageRef?.putFile(photoUri!!)?.addOnSuccessListener{ taskSnapshot ->
-            Toast.makeText(context,"업로드성공",Toast.LENGTH_SHORT).show();
-        }
-            ?.addOnFailureListener {
-                Toast.makeText(context,"업로드실패",Toast.LENGTH_SHORT).show();
-            }
-    }
 
 }
