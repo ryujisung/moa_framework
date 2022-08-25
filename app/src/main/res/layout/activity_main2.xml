@@ -5,35 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
+
     <ImageView
-        android:id="@+id/moamoa"
+        android:id="@+id/search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/img2"
+        android:src="@drawable/ic_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="208dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_human"
+        app:layout_constraintStart_toStartOf="@id/small_moa"
+        app:layout_constraintTop_toTopOf="@id/small_moa"
+        android:layout_marginStart="300dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/small_moa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_small_moa"
+        app:layout_constraintStart_toStartOf="@id/rectangle"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/small_moa"
+        android:src="@drawable/ic_text_search"
+        app:layout_constraintTop_toTopOf="@+id/small_moa"
+        android:layout_marginStart="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/dd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/moamoa"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="190dp"
         />
 
     <EditText
         android:id="@+id/search_main_ET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/search"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="찾고싶은 도로명을 입력해주세요"
-        android:layout_marginTop="200dp"
+        android:hint="검색하고 싶은 위치명을 입력하세요."
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="210dp"
+        android:background="@android:color/transparent"
         />
 
 

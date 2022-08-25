@@ -5,39 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_human"
+        app:layout_constraintStart_toStartOf="@id/small_moa"
+        app:layout_constraintTop_toTopOf="@id/small_moa"
+        android:layout_marginStart="300dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/small_moa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_small_moa"
+        app:layout_constraintEnd_toStartOf="@id/moamoa"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/small_moa"
+        android:src="@drawable/ic_text_search"
+        app:layout_constraintTop_toTopOf="@+id/small_moa"
+        android:layout_marginStart="10dp"
+        />
+
+
     <ImageView
         android:id="@+id/moamoa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/img2"
+        android:src="@drawable/ic_moa__2_"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="121dp"
         />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dd"
+        android:src="@drawable/ic_zone_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/moamoa"
         android:layout_marginTop="15dp"
         />
 
-    <Button
+    <TextView
         android:id="@+id/search_btn"
-        android:layout_width="0dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rec"
+        app:layout_constraintStart_toStartOf="@id/rec"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="200dp"
-        app:layout_constraintWidth_percent="0.7"
+        android:layout_marginTop="320dp"
+        android:textStyle="bold"
         android:textSize="20sp"
-        android:backgroundTint="#d3d3d3"
         android:textColor="@color/black"
         android:text="도로명 검색"
+        />
+
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_map"
+        app:layout_constraintStart_toStartOf="@id/rec"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="322dp"
         />
 
 

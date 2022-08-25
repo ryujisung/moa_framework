@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(loginintent)
         }
 
-        findViewById<TextView>(R.id.tv_signup).setOnClickListener {
+        findViewById<ImageView>(R.id.tv_signup).setOnClickListener {
             val signupintent = Intent(this,SignupActivity::class.java)
 
             startActivity(signupintent)

@@ -7,10 +7,20 @@
     tools:context=".SignupActivity">
 
     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/moa"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_text_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
         android:id="@+id/moa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/moa2"
+        android:src="@drawable/ic_moa__2_"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,7 +29,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/moa_fun"
+        android:src="@drawable/ic_usemoa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/moa"
@@ -30,22 +40,13 @@
         android:id="@+id/vec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/vector"
+        android:src="@drawable/ic_group_1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/rec"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="320dp"
         />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="335dp"
-        android:src="@drawable/vector1"
-        app:layout_constraintStart_toStartOf="@+id/rec"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/rec"
@@ -72,7 +73,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/rock"
+        android:src="@drawable/ic_group_2"
         app:layout_constraintStart_toStartOf="@id/rec2"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="417dp"
@@ -105,7 +106,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/rock"
+        android:src="@drawable/ic_group_2"
         app:layout_constraintStart_toStartOf="@id/rec3"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="500dp"
@@ -151,15 +152,17 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/haveaccount"
+        android:src="@drawable/ic_haveaccount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="650dp"
         />
 
-    <TextView
+
+    <ImageView
         android:id="@+id/tv_login"
+        android:src="@drawable/ic_gologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -167,7 +170,6 @@
         app:layout_constraintTop_toBottomOf="@id/btn_signup"
         android:layout_marginTop="70dp"
         android:layout_marginStart="200dp"
-        android:text="로그인하기"
         android:fontFamily="@font/fontstyle"
         />
 

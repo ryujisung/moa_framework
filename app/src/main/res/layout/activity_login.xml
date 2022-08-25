@@ -7,10 +7,21 @@
     tools:context=".LoginActivity">
 
     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="67dp"
+        />
+
+    <ImageView
         android:id="@+id/moamoa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/moa2"
+        android:src="@drawable/ic_moa__2_"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +31,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/moa_welcome"
+        android:src="@drawable/ic_moa________________"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/moamoa"
@@ -31,23 +42,13 @@
         android:id="@+id/vec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/vector"
+        android:src="@drawable/ic_group_1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@id/rec"
         android:layout_marginStart="18dp"
         android:layout_marginTop="320dp"
         />
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="335dp"
-        android:src="@drawable/vector1"
-        app:layout_constraintStart_toStartOf="@+id/rec"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/rec"
@@ -109,7 +110,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/noaccount"
+        android:src="@drawable/ic_noacc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -120,7 +121,7 @@
         android:id="@+id/iv_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/signup"
+        android:src="@drawable/ic_signup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="300dp"
@@ -130,7 +131,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/rock"
+        android:src="@drawable/ic_group_2"
         app:layout_constraintStart_toStartOf="@id/rec2"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="417dp"

@@ -3,10 +3,7 @@ package com.example.moa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
@@ -20,7 +17,7 @@ class SignupActivity : AppCompatActivity() {
             sigininAndSignup()
         }
 
-        findViewById<TextView>(R.id.tv_login).setOnClickListener {
+        findViewById<ImageView>(R.id.tv_login).setOnClickListener {
             sigininAndSignup()
             val loginintent = Intent(this,MainActivity2::class.java)
             startActivity(loginintent)
